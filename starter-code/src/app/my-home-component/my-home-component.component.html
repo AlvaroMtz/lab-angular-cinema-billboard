@@ -1,9 +1,9 @@
 
-<div *ngFor="let m of hola">
-  <img src="{{m.poster}}">
-  <p>{{m.synopsis}}</p>
-  <p>{{m.genres}}</p>
-  <p>{{m.actors}}</p>
-  <p>{{m.title}}</p>
+<div  class="card" *ngFor="let m of hola">
+  <img src="{{m.poster}}" alt="Avatar" style="width:30%">
+  <div class="container">
+  <a [routerLink]="['/movie/' + m.id]">{{m.title}}</a>
 </div>
+</div>
+
 

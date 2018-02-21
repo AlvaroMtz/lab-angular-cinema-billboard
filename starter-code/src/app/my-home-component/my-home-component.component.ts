@@ -14,11 +14,7 @@ export class MyHomeComponentComponent implements OnInit {
   constructor( public router: Router, private listOfMovies: MoviesService) {}
 
   ngOnInit() {
-
-    //console.log(this.listOfMovies);
-    //console.log(typeof(this.listOfMovies.listOfMovies))
   }
-  hola = this.listOfMovies.getMovies()
-
+  hola = this.listOfMovies.getMovies();
 
 }
