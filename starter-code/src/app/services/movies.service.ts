@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
 export interface MovieInterface {
+    id: Number;
     title: String;
     poster: String;
     synopsis: String;
@@ -14,11 +15,12 @@ export interface MovieInterface {
 
 @Injectable()
 export class MoviesService {
-    movies: Array<object>
+    movies: Array<MovieInterface> = [];
     constructor() { }
-    getMovies(){
 
+    getMovies(){
     }
+
     getMovie(id){
     let encontrado = false;
     let i = 0;
